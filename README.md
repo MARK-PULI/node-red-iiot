@@ -14,7 +14,12 @@ This document introduces how to use the Node-RED platform, build the  I-IoT appl
 5. System maintenance.
 
 Here we only focus on the concept of designing the I-IoT platform, and not on coding. You can get many information and examples on the internet by using the search engine.
+{% endhint %}
 
+The Gitbook address of this document is \
+[https://mark-tsai-1.gitbook.io/node-red-iiot/](https://mark-tsai-1.gitbook.io/node-red-iiot/)
+
+{% hint style="info" %}
 
 {% endhint %}
 

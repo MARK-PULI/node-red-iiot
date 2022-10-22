@@ -19,7 +19,7 @@ description: >-
 
 #### Wiring of Advantec WISE-4012(AI/DI/DO)
 
-![](<../.gitbook/assets/Adventec WISE-4012\_4051 DI REST.jpg>)
+![](<../.gitbook/assets/Adventec WISE-4012\_4051 DI REST (1).jpg>)
 
 #### Wiring of WISE-4051(DI)
 
@@ -35,7 +35,7 @@ description: >-
 
 #### WISE-4012, WISE-4051 DI REST format
 
-![](<../.gitbook/assets/Adventec WISE-4012\_4051 DI REST (1).jpg>)
+![](<../.gitbook/assets/Adventec WISE-4012\_4051 DI REST.jpg>)
 
 #### Advantec WISE-4000 serials REST URL and method
 
