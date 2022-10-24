@@ -37,7 +37,7 @@ description: >-
 
 ![](<../.gitbook/assets/Adventec WISE-4012\_4051 DI REST.jpg>)
 
-#### Advantec WISE-4000 serials REST URL and method
+#### Advantec WISE-4000 series REST URL and method
 
 <figure><img src="../.gitbook/assets/Advantec WISE-4000 serial REST format.jpg" alt=""><figcaption></figcaption></figure>
 
@@ -45,8 +45,17 @@ There are alternative options for reading the singnal from the devices. Use WISE
 
 <figure><img src="../.gitbook/assets/Advantec WISE-4051 with ADAM-4017plus.jpg" alt=""><figcaption><p>Application Scenario of WISE-4051 RS-485 Port with ADAM-4000 Modbus I/O Module</p></figcaption></figure>
 
-And use the ADAM-6700 serial (ADAM-6717 for AI/DI/DO or ADAM-6750 for DI/DO) are Intelligent I/O Gateway which Node-RED platform included. In the Node-RED of ADAM-6700, there are package nodes for contact to the ADAM-6700. Because of the outputs of nodes are the value of the signal, 4-20mA for example. So you can convert to 0-65535 digital number for precisely calibration before MQTT out.
+And use the ADAM-6700 series (ADAM-6717 for AI/DI/DO or ADAM-6750 for DI/DO) are Intelligent I/O Gateway which Node-RED platform included. In the Node-RED of ADAM-6700, there are package nodes for contact to the ADAM-6700. Because of the outputs of nodes are the value of the signal, 4-20mA for example. So you can convert to 0-65535 digital number for precisely calibration before MQTT out.
 
-<figure><img src="../.gitbook/assets/Advantec ADAM-6700 serial Node-RED.jpg" alt=""><figcaption><p>Node-RED platform of the ADAM-6700 serial</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Advantec ADAM-6700 series Node-RED.jpg" alt=""><figcaption><p>Node-RED example of  ADAM-6717</p></figcaption></figure>
 
-For more WISE-4000 serial information please reference from Advantech web site.
+The Node-RED example have these features
+
+* Receive the AI/DI signal from ADAM6717.
+* Convert AI/DI signal to 0-65535 digital number.
+* Record the MAX/MIN value of this session.
+* MQTT out the values of PV/MAX/MIN values.
+* Display chart of the PV and MAX/MIN values.
+* Can be reset and to restart collect the MAX/MIN value and clean the chart.&#x20;
+
+For more WISE-4000 series information please reference from Advantech web site.
