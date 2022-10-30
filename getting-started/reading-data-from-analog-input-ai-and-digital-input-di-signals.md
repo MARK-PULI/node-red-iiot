@@ -15,7 +15,7 @@ description: >-
 
 #### The example flow(Monitoring the inverter frequency of the pump, tank level, and the flow rate for the recycled water)
 
-![Reading data from AI/DI via Advantec WISE-4012](<../.gitbook/assets/Reading data from AI or DI signal via Advantec WISE-4012.jpg>)
+<figure><img src="../.gitbook/assets/Reading data from AI or DI signal via Advantec WISE-4012-1 (1).jpg" alt=""><figcaption></figcaption></figure>
 
 #### Wiring of Advantec WISE-4012(AI/DI/DO)
 
@@ -28,10 +28,6 @@ description: >-
 #### WISE-4051 RS-485 wiring
 
 ![](<../.gitbook/assets/Advantec WISE-4051 wiring(RS-485).jpg>)
-
-#### WISE-4012 AI REST format
-
-![](<../.gitbook/assets/Advantec WISE-4012 AI REST.jpg>)
 
 #### WISE-4012, WISE-4051 DI REST format
 

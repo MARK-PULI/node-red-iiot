@@ -73,9 +73,24 @@ Subnets 1, 2, and 3 in the following table, mean 192.168.1.x, 192.168.2.x, 192.1
 
 ### The Service installed by Docker for NAS
 
-The following diagram depicts the installation of the proposed services by Docker for NAS. We will install Eclipse Mosquitto MQTT data broker("eclipse-mosquitto1"), Node-RED platform(2 instances "nodered-node-red1" and "nodered-node-red7"), and MongoDB("mongoIoT206" in this example) in the Synology NAS.&#x20;
+The following diagram depicts the installation of the proposed services by Docker for NAS. We will install Eclipse Mosquitto MQTT data broker("eclipse-mosquitto1"), Node-RED platform(2 instances "nodered-node-red0" use 1880 port and "nodered-node-red7" use 1887 port), and MongoDB("mongoIoT1" in this example) in the Synology NAS.&#x20;
 
-![The examples install service by the Docker for Synology NAS](<../.gitbook/assets/The Services Installed by Docker for NAS.jpg>)
+<figure><img src="../.gitbook/assets/NAS-Docker-NodeRED-1.jpg" alt=""><figcaption><p>Download the Node-RED image from Docker </p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/NAS-NodeRED.jpg" alt=""><figcaption><p>Example of install MQTT, MongoDB, Node-RED Server in Snology NAS</p></figcaption></figure>
+
+When installing the packages, please checked the auto restart option.
+
+<figure><img src="../.gitbook/assets/NAS-Docker-NodeRED-2.jpg" alt=""><figcaption></figcaption></figure>
+
+After installing MQTT, MongoDB and Node-RED server, you must find the setting.js file to  implement the security of the Node-RED platform, and the public directory for Node-RED to access, which named "httpStatic".&#x20;
+
+Create a simple flow for the instance of Node-RED. The system will create a flow file(flow.json). You must use SSH service to connect the NAS, and find this file, and the settings.js will in the same directory. Please use one of the command show below. After you finishing the edit of the settings.js, for the security reason, please unchecked the SSH function of the NAS.
+
+```
+find /volume1 -name flows.json     or
+find / -name flows.json
+```
 
 ### The services install to Raspberry Pi
 
