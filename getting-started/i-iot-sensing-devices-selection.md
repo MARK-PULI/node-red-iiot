@@ -24,7 +24,7 @@ The following table listed the recommended method and devices connecting to the 
 | Inverters, sensors or meters with AI signal  | Analog Input signal                                    | Advantech WISE-4012 or WISE-4220 with S214 | <p>http request</p><p>(Restful)</p> |
 | Sensors, speed or flow meters with DI signal | Digital Input signal                                   | Advantech WISE-4051 or WISE-4220 with S250 | <p>http request</p><p>(Restful)</p> |
 | DVR or         IP cam                        | support snapshot API                                   | Raspberry Pi or NAS                        | http request                        |
-| 3rd or other system support MQTT protocol    | MQTT                                                   | Raspberry Pi or NAS                        | mqtt subscrip                       |
+| 3rd or other system support MQTT protocol    | MQTT                                                   | Raspberry Pi or NAS                        | mqtt subscribe                      |
 | 3rd Web service support Restful              | Restful                                                | Raspberry Pi or NAS                        | http request(Restful)               |
 | Database or TXT file exchange                | With NoSQL(MongoDB ex.), MS SQL, MySQL, AWS s3或TXT/CVS | NAS                                        | The match node                      |
 

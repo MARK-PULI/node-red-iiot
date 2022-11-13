@@ -87,10 +87,34 @@ After installing MQTT, MongoDB and Node-RED server, you must find the setting.js
 
 Create a simple flow for the instance of Node-RED. The system will create a flow file(flow.json). You must use SSH service to connect the NAS, and find this file, and the settings.js will in the same directory. Please use one of the command show below. After you finishing the edit of the settings.js, for the security reason, please unchecked the SSH function of the NAS.
 
+<pre><code><strong>sudo su                          //use superuser account
+</strong><strong>find /volume1/@docker/volumes -name flows.json    //or
+</strong><strong>find /volume1/@docker/volumes -name settings.js </strong></code></pre>
+
+you will find the directory of these files look like
+
 ```
-find /volume1 -name flows.json     or
-find / -name flows.json
+/volume1/@docker/volumes/6359804d2163e45448a618515b9fa10084a2bff7b7bf91aff410a468730f38ee/_data
+
 ```
+
+<figure><img src="../.gitbook/assets/Find the directory of settings in NAS.jpg" alt=""><figcaption><p>Find the directory of the settings.js</p></figcaption></figure>
+
+After finding the settings.js file, you must edit the settings.js for the security of Node-RED
+
+Include the parameters of adminAuth, httpNodeAuth and httpStaticAuth. The passwords are translated by the Linux Node-RED command.
+
+```
+sudo npm install -g node-red-admin      //Install Node-RED package
+sudo node-red-admin hash-pw             //Call the hash-pw function 
+
+```
+
+Use node-red-admin to get the hash code of your password. And then put the hash password in the settings.js. If the NAS not support the npm command, you can try to install in the Raspberry pi or Windows to get the hash password.
+
+<figure><img src="../.gitbook/assets/Edit the settings-1.jpg" alt=""><figcaption><p>Example of edit the security parameters of settings.js</p></figcaption></figure>
+
+After Finishing the procedures above, please restart the Node-RED service.
 
 ### The services install to Raspberry Pi
 
@@ -103,5 +127,4 @@ The install procedure and settings you can find more information on the internet
 
 After you finished installing the NAS and Raspberry Pi, and their services. In this book, we install the nodes for Node-RED of NAS and Raspberry Pi as follows, please use the \[Manage palette] of the menu in Node-RED.
 
-![The recommanded nodes install for Node-RED](<../.gitbook/assets/The nodes install for Node-RED.jpg>)
-
+<figure><img src="../.gitbook/assets/The nodes install for Node-RED.jpg" alt=""><figcaption></figcaption></figure>
