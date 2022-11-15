@@ -102,7 +102,7 @@ you will find the directory of these files look like
 
 After finding the settings.js file, you must edit the settings.js for the security of Node-RED
 
-Include the parameters of adminAuth, httpNodeAuth and httpStaticAuth. The passwords are translated by the Linux Node-RED command.
+Include the parameters of adminAuth, httpNodeAuth and httpStaticAuth. The passwords are encoded by the Linux Node-RED command.
 
 ```
 sudo npm install -g node-red-admin      //Install Node-RED package
@@ -110,7 +110,7 @@ sudo node-red-admin hash-pw             //Call the hash-pw function
 
 ```
 
-Use node-red-admin to get the hash code of your password. And then put the hash password in the settings.js. If the NAS not support the npm command, you can try to install in the Raspberry pi or Windows to get the hash password.
+Use node-red-admin to get the hash encode of your password. And then put the hash encode password in the settings.js. If the NAS not support the npm command, you can try to install in the Raspberry pi or Windows to get the hash code.
 
 <figure><img src="../.gitbook/assets/Edit the settings-1.jpg" alt=""><figcaption><p>Example of edit the security parameters of settings.js</p></figcaption></figure>
 
