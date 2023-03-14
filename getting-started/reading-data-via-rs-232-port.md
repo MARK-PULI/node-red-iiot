@@ -3,7 +3,11 @@
 #### Requirements
 
 * Raspberry  Pi or PC or IoT gateway with RS-232 port, and installed Node-RED.
-* The RS-232 transfer protocol and the data format.
+* The RS-232 transfer protocol and the data format of your device.
+
+The following are two examples:\
+1.An early NDC measurement system used for online basic weight measurement.\
+2.An electronic scale with RS-232 transmission port.
 
 #### The example flow(the early NDC measurement system for the online basic weight  measurement, the Node-RED flow installed in Raspberry Pi)
 
