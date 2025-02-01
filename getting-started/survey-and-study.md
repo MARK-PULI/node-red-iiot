@@ -51,9 +51,9 @@ The next task is to survey the IT/OT(Information Technology/Operation Technology
 
 ![I-IoT devices and protocols in the factory(Source:Hands-On Industrial Internet of Things)](<../.gitbook/assets/I-Iot in the factory.jpg>)
 
-Level 1: Sensors, transducers, and actuators, and the transmission of information network to Level 2.&#x20;
+Level 1: Sensors, transducers, RTU(Remote terminal unit), and actuators, and the transmission of information network to Level 2.&#x20;
 
-Level 2:RTU(Remote terminal unit), PID controllers, Micro-Controller, Embedded controllers, CNCs,  PLCs, and DCSs. and what are the Fieldbus protocols? such as Modbus, Profibus, and ControlNet.
+Level 2: PID controllers, Micro-Controller, Embedded controllers, CNCs,  PLCs, and DCSs. and what are the Fieldbus protocols? such as Modbus, Profibus, and ControlNet.
 
 Level 3:SCADA, OPC Server and Historian. SCADA Presents information by computer or HMI(Human Machine Interface).&#x20;
 
